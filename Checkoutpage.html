@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link rel="icon" type="icon.png" href="img/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/checkout.css.css">
+    <title>Check out</title>
+    <style>
+        h3 {
+            text-align: center;
+        }
+
+         /* Ajustări fine pentru UX mobil */
+  @media (max-width: 991px) {
+    .navbar-brand {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .navbar-nav {
+      padding-top: 1rem;
+    }
+  }
+
+     </style>
+</head>
+<header class="navbar">
+<div class="container">
+<!--Logo-->
+<div class="logo">
+    <img src="img/logo.png" alt="Company logo" width="80px">
+</div>
+
+<!--Checkbox pentru control meniu mobil hamburger-->
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+<label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<!--Link-uri Navigare-->
+
+<nav class="nav-links">
+    <ul>
+        <li> <a href="page_one.html">Home</a></li>
+        <li> <a href="Layout.html">Shop</a></li>
+        <li> <a href="AboutUs.html">About us</a></li>
+        <li> <a href="#">Contact</a></li>
+        <li> <a href="#" style="color:red;">Sale!</a></li>
+    </ul>
+</nav>
+
+<!--Iconite Utilizare-->
+<div class="nav-icons">
+<button aria-label="cart">
+<img src="img/cart1.png" alt="cartaccount" width="40px"/>
+</button>
+<button aria-label="search">
+<img src="img/user.png" alt="useaccount" width="40px"/>
+</button>
+</div>
+</div>
+       
+</header>
+<main>
+<div class="hero">
+  <img src="img/fundal 3.jpg" alt="Fashion background" width="100%" height="100px"/>
+    <div class="flex-container">
+        <h2>View our Collection</h2>
+        <p>
+          Discover a collection that blends style and comfort. Browse our
+          carefully selected pieces of modern clothing hat follow the latest
+          trends while staying true to your unique style. Whether you're looking
+          for everyday essentials or standout pieces for special occasion, our
+          collection brings you inspiration and quality in one place
+        </p>
+        <button id="button" type="button" onclick="alert('Show all')">
+          Show all
+        </button>
+    </div>
+</div>
+
+<body>
+<div class="grid-container">
+<h3> Your Cart </h3>
+<span id="price" style="color:black"><img src="img/cart1.png" width="20px"><b>4</b></span>
+<div class="cart-items">
+<img src="img/leroy1.jpg"  alt="Leroy Pants" width="100px">
+<span class="price">$50</span>
+<h5>Leroy Pants</h5>
+<input type="number" name="pair" min="1" max="10">
+<h6>Size M</h6>
+<button style="background-color: red; color: white;">Remove</button>
+</div>
+<hr>
+<div class="cart-items">
+<img src="img/Massimo.jpg" alt="Massimo Slim Pants" width="100px">
+<span class="price">$120</span>
+<h5>Massimo Slim Pants</h5>
+<input type="number" name="pair" min="1" max="10"> 
+<h6>Size L</h6>
+<button style="background-color: red; color: white;">Remove</button>
+</div>
+<hr>
+<div class="cart-items">
+<img src="img/Polo.jpg" alt="Polo Jacket Green" width="100px">
+<span class="price">$150</span>
+<h5> Polo Jacket Green</h5>
+<input type="number" name="pair" min="1" max="10">
+<h6>Size S </h6>
+<button style="background-color: red; color: white;">Remove</button>
+</div>
+<hr>
+<div class="cart-items">
+<img src="img/Stylish Fall.jpg" alt="Stylish Fall Sweater" width="100px">
+<span class="price">$80</span>
+<h5>Sweater Stylish</h5>    
+<input type="number" name="pair" min="1" max="10">
+<h6>Size M</h6>
+<button style="background-color: red; color: white;">Remove</button>
+</div>
+<hr>
+<p>Total <span class="price" style="color:black"> <b>#400</b></span></p>
+</div>
+
+        
+<h3>Checkout</h3>
+<ul class="list-inline">
+<li class="list-inline-item">Home</li>
+>
+<li class="list-inline-item">Shop</li>
+>
+<li class="list-inline-item">View All</li>
+</ul>
+
+<!-- Credit card form -->
+<div class="container" class="col-12 col-md-6 col-lg-4">
+<form>
+<div class="row">
+<div class="col-md-8 mb-4">
+<div class="card mb-4">
+<div class="card-header py-3">
+<h5 class="mb-0">Biling details</h5>
+</div>
+<div class="card-body">
+
+<!-- 2 column grid layout with text inputs for the first and last names -->
+<div class="row mb-4">
+<div class="col">
+<div class="form-outline">
+<input type="text" id="form6Example1" class="form-control" />
+<label class="form-label" for="form6Example1">First name</label>
+</div>
+</div>
+<div class="col">
+ <div class="form-outline">
+<input type="text" id="form6Example2" class="form-control" />
+<label class="form-label" for="form6Example2">Last name</label>
+</div>
+</div>
+</div>
+<!-- Text input -->
+<div class="form-outline mb-4">
+<input type="text" id="form6Example3" class="form-control" />
+<label class="form-label" for="form6Example3">Company name</label>
+</div>
+
+<!-- Text input -->
+<div class="form-outline mb-4">
+<input type="text" id="form6Example4" class="form-control" />
+<label class="form-label" for="form6Example4">Address</label>
+</div>
+
+<!-- Email input -->
+<div class="form-outline mb-4">
+<input type="email" id="form6Example5" class="form-control" />
+<label class="form-label" for="form6Example5">Email</label>
+</div>
+
+<!-- Number input -->
+<div class="form-outline mb-4">
+<input type="number" id="form6Example6" class="form-control" />
+<label class="form-label" for="form6Example6">Phone</label>
+</div>
+
+<!--Country Input-->
+<div class="form-group">
+<label for="country">Country: </label>
+<select class="form-control" name="country" id="country">
+<option value="Serbia">Serbia</option>
+<option value="Romania" selected="selected">Romania</option>
+<option value="Ukraine">Ukraine</option>
+</select>
+</div>
+
+<hr class="my-4" />
+
+<div class="form-check">
+<input
+class="form-check-input"
+type="checkbox"
+value=""
+id="checkoutForm1"
+/>
+<label class="form-check-label" for="checkoutForm1">
+Shipping address is the same as my billing address
+</label>
+</div>
+
+<div class="form-check mb-4">
+<input
+class="form-check-input"
+type="checkbox"
+value=""
+id="checkoutForm2"
+checked
+/>
+<label class="form-check-label" for="checkoutForm2">
+Save this information for next time
+</label>
+</div>
+ <hr class="my-4" />
+
+<h5 class="mb-4">Payment</h5>
+
+<label class="form-check-label" for="checkoutForm3"></label>
+<button type="button"   class="btn btn-dark">Cash</button>
+
+<div class="form-check">
+<input
+class="form-check-input"
+type="radio"
+name="flexRadioDefault"
+id="checkoutForm3"
+checked
+/>
+<label class="form-check-label" for="checkoutForm3">
+Credit card
+</label>
+<img src="img/visa-logo.png" alt="CreditCard" width="30px">
+</div>
+
+<div class="form-check">
+<input
+class="form-check-input"
+type="radio"
+name="flexRadioDefault"
+id="checkoutForm4"
+/>
+<label class="form-check-label" for="checkoutForm4">
+Debit card
+</label>
+</div>
+
+<div class="form-check mb-4">
+<input
+class="form-check-input"
+type="radio"
+name="flexRadioDefault"
+id="checkoutForm5"
+/>
+<label class="form-check-label" for="checkoutForm5">
+Paypal
+</label>
+<img src="img/paypal.png" alt="paypal" width="30px">
+</div>
+<div class="row mb-4">
+<div class="col">
+<div class="form-outline">
+<input type="text" id="formNameOnCard" class="form-control" />
+<label class="form-label" for="formNameOnCard">Name on card</label>
+</div>
+</div>
+<div class="col">
+<div class="form-outline">
+<input type="text" id="formCardNumber" class="form-control" />
+<label class="form-label" for="formCardNumber"
+>Credit card number</label
+>
+</div>
+</div>
+</div>
+<div class="row mb-4">
+<div class="col-3">
+<div class="form-outline">
+<input type="text" id="formExpiration" class="form-control" />
+<label class="form-label" for="formExpiration">Expiration</label>
+</div>
+</div>
+<div class="col-3">
+<div class="form-outline">
+<input type="text" id="formCVV" class="form-control" />
+<label class="form-label" for="formCVV">CVV</label>
+</div>
+</div>
+</div>
+
+<button type="button" class="btn btn-success">Continuie to Checkout</button>
+</form>
+</div>
+</main>
+
+<footer class=" text-light pt-5 pb-4 border-top"  style="background-color: #E4D7CD;">
+<div class="container">
+    <div class="row">
+       <!-- Coloana 1: Shop -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Shop</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="Layout.html" class="text-dark text-decoration-none">Noutăți</a></li>
+          <li class="mb-2"><a href="page_one.html" class="text-dark text-decoration-none">Cele mai vândute</a></li>
+          <li class="mb-2"><a href="Layout.html" class="text-dark text-decoration-none">Reduceri</a></li>
+          <li class="mb-2"><a href="page_one.html" class="text-dark text-decoration-none">Colecția de vară</a></li>
+        </ul>
+      </div>
+        
+          <!-- Coloana 2: Informații -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Informații</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="AboutUs.html" class="text-dark text-decoration-none">Despre Noi</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Termeni și Condiții</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Politica de Confidențialitate</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Coloana 3: Suport Clienți -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Suport Clienți</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> București, România</li>
+          <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> suport@magazin.ro</li>
+          <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> +40 7xx xxx xxx</li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Întrebări Frecvente (FAQ)</a></li>
+        </ul>
+      </div>
+
+<!-- Social Media -->
+<div class="row align-items-center">
+      <div class="col-md-7 col-lg-8">
+        <p>© 2026 <strong>E-SHOP</strong>. Toate drepturile rezervate.</p>
+      </div>
+      <div class="col-md-5 col-lg-4">
+        <div class="text-center text-md-end">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><a href="#" class="text-light fs-4"><i class="bi bi-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-light fs-4"><i class="bi bi-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-light fs-4"><i class="bi bi-tiktok"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>  
+
+</footer>
+<script src="main.js/bootstrap.bundle.min.js"></script>
+<script src="js/Checkout.js"></script>
+</body>
+</html>

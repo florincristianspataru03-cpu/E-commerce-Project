@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>First page</title>
+    <script>
+      function myFunction() {
+        console.log("");
+      }
+    </script>
+</head>
+<body>
+      
+    <header class="header-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Shop Smart Logo" width="100px">
+        </div>
+        <div class="main-nav">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="page_one.html">Home</a>
+             <a class="navbar-brand" href="register_page.html">Login</a>
+             <a class="navbar-brand" href="Layout.html">Shop</a>
+             <a class="navbar-brand" href="#">Contact Us</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSearch">
+        <form class="d-flex ms-auto mt-2 mt-lg-0">
+        <input class="form-control me-2" type="search" placeholder="Căutare" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+         <!-- Grupul de Iconițe: Coș și Cont -->
+      <div class="navbar-nav ms-auto d-flex flex-row align-items-center">
+        <!-- Coș de cumpărături cu Badge -->
+        <a class="nav-link px-2 position-relative" href="#">
+          <i class="bi bi-cart3 fs-4"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            3
+          </span>
+           </a>
+           <!-- Cont Utilizator (Dropdown) -->
+        <div class="nav-item dropdown ms-3">
+          <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userMenu" data-bs-toggle="dropdown">
+            <i class="bi bi-person-circle fs-4 me-1"></i>
+            <span class="d-none d-xl-inline">Contul meu</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="my order.html">Comenzile mele</a></li>
+            <li><a class="dropdown-item" href="#">Setări profil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#">Deconectare</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+        </div>
+    
+    </header>
+
+    <div class="hero">
+        <img src="img/fundal 2.jpg" alt="Fashion background" width="100%" height="100px">
+        <div class="flex-container">
+            <h2>View our Collection</h2>
+            <p>Discover a collection that blends style and comfort. Browse our
+        carefully selected pieces of modern clothing hat follow the latest
+        trends while staying true to your unique style. Whether you're looking
+        for everyday essentials or standout pieces for special occasion, our
+        collection brings you inspiration and quality in one place</p>
+          <button id="button" type="button" onclick="alert('Show all')">Show all</button>
+        </div>
+    </div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="page_one.html" class="text-decoration-none">Home</a></li>
+            >
+            <li class="list-inline-item"><a href="Layout.html" class="text-decoration-none">Shop</a></li>
+            >
+            <li class="list-inline-item"><a href="#" class="text-decoration-none">View All</a></li>
+        </ul>
+    <main>
+        <div class="content">
+            <div class="product-card">
+                <img src="img/Hugo.jpg" alt="Suit trainning">
+                <h3>Hugo Suit</h3>
+                <p class="price"><b>Ron529.99</b></p>
+                <b><button onclick="myFunction()">Add to Cart</b></button>
+            </div>
+            <div class="product-card">
+                <img src="img/jeans.jpg" alt="slim fit jeans">
+                <h3>Slim Fit Jeans</h3>
+                <p class="price"><b>Ron149.90</b></p>
+                <b><button onclick="myFunction()">Add to Cart</b></button>
+            </div>
+            <div class="product-card">
+                <img src="img/Nike shirt.jpg" alt="Red Nike Shirt">
+                <h3>Red Nike Shirt</h3>
+                <p class="price"><b>Ron149.99</b></p>
+                <b><button onclick="myFunction()">Add to Cart</b></button>
+            </div>
+            <div class="product-card">
+                <img src="img/Peppen Sie.jpg" alt="Peppen Jacket">
+                <h3>Peppen Jacket</h3>
+                <p class="price"><b>Ron139.99 <span style="color: red; text-decoration: line-through;">-10%</span></b></p>
+                <b><button onclick="myFunction()">Add to Cart</b></button>
+            </div>
+            <div class="product-card">
+                <img src="img/Style_ Casual.jpg" alt="Navy Pants">
+                <h3>Navy Pants</h3>
+                <p class="price"><b>Ron79.99 <span style="color: red; text-decoration: line-through;">-10%</span></b></p>
+                <b><button onclick="myFunction()">Add to Cart</b></button>
+            </div>
+            <div class="product-card">
+                <img src="img/image3.avif" alt="Nike Air Max">
+                <h3>Nike Air Max</h3>
+                <p class="price"><b>Ron129.99</b></p>
+                <b><button onclick="myFunction()">Add to Cart</b></button>
+            </div>
+            <div class="product-card">
+                <img src="img/img01.avif" alt="Nike Air Max">
+                <h3>Nike Air Max</h3>
+                <p class="price"><b>Ron119.99</b></p>
+                <b><button onclick="myFunction()">Add to Cart</b></button>
+            </div>
+            <div class="product-card">
+                <img src="img/URBENIE _ Women Clothing.jpg" alt="women clothing">
+                <h3>Urban Hood </h3>
+                <p class="price"><b>Ron79.99</b></p>
+                <b><button onclick="myFunction()">Add to Cart</b></button>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+
+<div class="card shadow-sm border-0">
+<div class="card-body">
+<h5 class="mb-3">Filtreaza dupa:</h5>
+
+<div class="according accordion flush" id="filterAccordion">
+<!--Categories-->
+<ul class="list-group list-group-flush">
+ 
+    <li class="list-group-item">Men</li>
+ 
+    <li class="list-group-item active">Women</li>
+ 
+    <li class="list-group-item">Kids</li>
+ 
+ 
+  </ul>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button px-0 fw-bold" type="button" data-bs-toggle="collapse"data-bs-target="#collapseCat">Offers</button>
+</h2>
+<div id="collapseCat" class="accordion-collapse collapse show">
+<div class="accordion-body px-0">
+<ul class="list-unstyled">
+<li><a href="#" class="text-decoration-none text-dark">Snickers (45)</a>
+</li>
+<li><a href="#" class="text-decoration-none text-dark">Fashion (120)</a>
+</li>
+<li><a href="#" class="text-decoration-none text-dark">Shirt&Blouse (32)</a>
+</li>
+</ul>
+</div>
+</div>
+</div> 
+
+<!--Brand-->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button px-0 fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrand">Brand</button>
+</h2>
+<div id="collapseBrand" class="accordion-collapse collapse">
+<div class="accordion-body px-0">
+<div class="form-check">
+<input class="form-check-input"type="checkbox"id="b1"/><label class="form-check-label" for="b1">Zara</label>
+</div>
+<div class="form-check">
+<input class="form-check-input"type="checkbox"id="b2"/><label class="form-check-label" for="b2">Berska</label>
+</div>
+<div class="form-check">
+<input class="form-check-input"type="checkbox"id="b3"/><label class="form-check-label" for="b3">Nike</label>
+</div>
+</div>
+</div>
+</div>
+
+<!--Prince Range-->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button px-0 fw-bold collapsed"type="button"data-bs-toggle="collapse"data-bs-target="#collapsePrice">
+Preț (RON)
+</button>
+</h2>
+<div id="collapsePrice" class="accordion-collapse collapse">
+<div class="accordion-body px-0">
+<input type="range"class="form-range"min="0"max="5000"id="priceRange"/>
+<div class="d-flex justify-content-between">
+<small>0 RON</small>
+<small>5000 RON</small>
+</div>
+</div>
+</div>
+</div>
+
+<!--Color-->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button px-0 fw-bold collapsed"type="button"data-bs-toggle="collapse"data-bs-target="#collapseColor">
+Culoare
+</button>
+</h2>
+<div id="collapseColor" class="accordion-collapse collapse">
+<div class="accordion-body px-0 d-flex gap-2">
+<div class="rounded-circle border"style="width: 25px;height: 25px;background: black;cursor: pointer;"></div>
+<div class="rounded-circle border"style="width: 25px;height: 25px;background: red;cursor: pointer;"></div>
+<div class="rounded-circle border"style="width: 25px;height: 25px;background: blue;cursor: pointer;"></div>
+</div>
+</div>
+</div>
+
+<!--Other-->
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button px-0 fw-bold collapsed"type="button"data-bs-toggle="collapse"data-bs-target="#collapseOther">
+Alte filtre
+</button>
+</h2>
+<div id="collapseOther" class="accordion-collapse collapse">
+<div class="accordion-body px-0">
+<div class="form-check form-switch">
+<input class="form-check-input"type="checkbox"id="onStock"/>
+<label class="form-check-label" for="onStock"
+>Doar în stoc</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button class="btn btn-primary w-100 mt-3">Aplică Filtre</button>
+<form class="sort mt-4">
+  <div>
+    <label>Add Promo Code</label>
+    <input type="text" class="form-control" placeholder="Enter promo code">
+    <button type="submit" class="btn btn-secondary w-100 mt-2">Apply</button>
+  </div>
+</div>
+</div>
+
+
+        </aside>
+        <form class="pages">
+            <h2>Pages</h2>
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">Next</button>
+        </form>
+        <form class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        </main>
+
+<!--Footer-->
+  <footer class="text-light py-5 mt-5 border-top" style="background-color: #E4D7CD;">
+    <div class="container">
+      <div class="row text-center text-md-start">
+<!-- Coloana 1: Shop -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Shop</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="page_one.html" class="text-dark text-decoration-none">Noutăți</a></li>
+          <li class="mb-2"><a href="page_one.html" class="text-dark text-decoration-none">Cele mai vândute</a></li>
+          <li class="mb-2"><a href="Layout.html" class="text-dark text-decoration-none">Reduceri</a></li>
+          <li class="mb-2"><a href="page_one.html" class="text-dark text-decoration-none">Colecția de vară</a></li>
+        </ul>
+      </div>
+<!-- Coloana 2: Informații -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Informații</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="AboutUs.html" class="text-dark text-decoration-none">Despre Noi</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Termeni și Condiții</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Politica de Confidențialitate</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Blog</a></li>
+        </ul>
+      </div>
+ <!-- Coloana 3: Suport Clienți -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Suport Clienți</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> București, România</li>
+          <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> suport@magazin.ro</li>
+          <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> +40 7xx xxx xxx</li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Întrebări Frecvente (FAQ)</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+<!-- Bottom Footer -->
+    <div class="row align-items-center">
+      <div class="col-md-7 col-lg-8">
+        <p>© 2026 <strong>E-SHOP</strong>. Toate drepturile rezervate.</p>
+      </div>
+      <div class="col-md-5 col-lg-4">
+        <div class="text-center text-md-end">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><a href="#" class="text-light fs-4"><i class="bi bi-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-light fs-4"><i class="bi bi-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-light fs-4"><i class="bi bi-tiktok"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+<script src="Js/Layout.js"></script>
+<script src="Js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
