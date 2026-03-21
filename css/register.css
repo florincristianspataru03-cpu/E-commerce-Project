@@ -1,0 +1,64 @@
+:root {
+  --brand: #1e2613;
+  --bg: #fff5ed;
+}
+
+body {
+  background: #faf8f8;
+  font-size: 17px;
+}
+
+.form-group {
+  background-color: #faf8f8;
+  border: 1px solid #cfd1d3;
+}
+
+.navbar {
+  background-color: #e4d7cd;
+  font-size: 28px;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar,
+.nav-item,
+.navbar-text {
+  color: black;
+}
+
+.navbar-item-big {
+  color: #ffd7b7;
+  font-size: 24px;
+}
+
+.register-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.page-title {
+  line-height: 41px;
+  font-weight: bold;
+  letter-spacing: -0.55px;
+  color: var(--brand);
+  font-size: 32px;
+}
+
+.form-control {
+  background-color: var(--bg);
+}
+
+.btn-brand {
+  border-color: var(--brand);
+  color: #fff;
+  border-radius: 0;
+}
+
+.helper {
+  color: #8c8c8c;
+}

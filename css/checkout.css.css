@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: #001affb7;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Meniu Desktop */
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Utilitare */
+.menu-toggle {
+  display: none;
+}
+.cart-icon {
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+/* Responsivitate - MOBIL */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    background-color: grey;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    order: 1;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary-color);
+    transition: 0.3s;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ed5e5e;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Afișare meniu când checkbox-ul este bifat */
+  .menu-toggle:checked ~ .nav-links {
+    max-height: 300px;
+    border-top: 1px solid #eee4e46c;
+  }
+
+  .logo {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  .nav-icons {
+    order: 2;
+    margin-left: 15px;
+  }
+}
+
+.hero {
+  border: 1px solid #ccc;
+  background-color: antiquewhite;
+  padding: 18px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.go-bottom {
+  font-size: medium;
+}
+
+body {
+  font-size: 17px;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: flex;
+    float: none;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 3px;
+  }
+  .logo {
+    width: 50px;
+    margin-left: 40px;
+    padding: 2px 4px;
+    height: 80px;
+  }
+}
+
+#image {
+  float: right;
+  margin-top: 20px;
+  width: 28px;
+  padding: 12px;
+}
+
+body {
+  background: #fff5ed;
+  font-family: Arial;
+}
+
+form {
+  width: 550px;
+  padding: 20px;
+  margin: 50px, auto;
+  color: antiquewhite;
+}
+
+/*Stiluri Coloane*/
+ul li h4 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+span.price {
+  float: right;
+  color: rgb(46, 42, 42);
+}
+
+hr {
+  border: 1px solid black;
+}
+
+h5 {
+  margin-bottom: 80px;
+}
+
+h6 {
+  margin-bottom: 80px;
+}
+
+.grid-container {
+  display: grid;
+  border: 1px solid black;
+  background-color: #996e22;
+  position: relative;
+  float: right;
+  padding: 20px;
+  margin-top: 100px;
+  width: 25%;
+  max-width: 925px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  margin-right: 130px;
+  height: 960px;
+}
+
+.cart-items {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: center;
+}
+
+@media (max-width: 925px) {
+  .grid-container {
+    width: 100%;
+    margin-right: 2.5rem;
+  }
+}
